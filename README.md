@@ -1,74 +1,145 @@
-# Welcome to your Lovable project
+# 🛡️ Cyber Scan Guardian Shield – Web Vulnerability Scanner
 
-## Project info
+> An ethical, open-source web vulnerability scanner built with React, Tailwind CSS, and Node.js – designed for developers, cybersecurity learners, and ethical hackers.
 
-**URL**: https://lovable.dev/projects/4e103939-9388-4a18-aebd-6415466feb56
+![Screenshot](./screenshot.png)
 
-## How can I edit this code?
+## 🔗 Live Demo
 
-There are several ways of editing your application.
+👉 **Frontend (GitHub Pages)**: [https://ibwmahin.github.io/cyber-scan-guardian-shield/](https://ibwmahin.github.io/cyber-scan-guardian-shield/)  
+👉 **Backend (Optional / Coming Soon)**: (e.g. Render or Railway deployment link)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4e103939-9388-4a18-aebd-6415466feb56) and start prompting.
+## 📌 Project Summary
 
-Changes made via Lovable will be committed automatically to this repo.
+**Cyber Scan Guardian Shield** is a cybersecurity tool that performs basic automated scans on websites to detect common vulnerabilities like:
 
-**Use your preferred IDE**
+- SSL misconfigurations
+- XSS and SQL injection indicators
+- Insecure headers
+- Clickjacking issues
+- Basic port checks (optional backend)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🛠 For **educational and ethical use only** — no illegal or black-hat methods involved.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ✨ Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🧠 Frontend
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Clean UI with hacker-style terminal aesthetics
+- Dark theme with Tailwind CSS
+- Input form to scan a domain/IP
+- Real-time scan result display
+- Risk levels (Low / Medium / High)
+- Fix suggestions for each issue
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🔍 Vulnerability Checks
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- ✅ SSL/TLS config
+- ✅ XSS payload testing (safe dummy logic)
+- ✅ SQL Injection indicators (mock)
+- ✅ Clickjacking (X-Frame-Options check)
+- ✅ CSP & Security Headers check
+- ✅ Open ports (if backend enabled)
+
+### 🕘 Optional (Advanced)
+
+- Scan history (localStorage / Firebase)
+- Backend-based deeper scans
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer        | Tech                        |
+| ------------ | --------------------------- |
+| Frontend     | React + Tailwind CSS        |
+| Backend      | Node.js + Express (planned) |
+| Deployment   | GitHub Pages (frontend)     |
+| APIs / Tools | Public APIs + Mock Logic    |
+
+---
+
+## 🚀 Getting Started
+
+### Clone and Setup
+
+```bash
+git clone https://github.com/ibwmahin/cyber-scan-guardian-shield.git
+cd cyber-scan-guardian-shield
+npm install
 npm run dev
+
+
+If you are running with a backend:
+
+cd backend
+npm install
+node index.js
+🌐 Deployment
+GitHub Pages (Frontend)
+Already deployed at:
+https://ibwmahin.github.io/cyber-scan-guardian-shield/
+
+If you want to deploy your fork:
+
+1. Add homepage to package.json: "homepage": "https://<your-username>.github.io/<repo-name>"
+2. Add scripts:
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
+3.Deploy:
+npm run deploy
+📄 License
+MIT License – free for personal, academic, or commercial use.
+
+
+🚨 Legal Disclaimer
+This tool is for educational and ethical testing only.
+Scanning websites without explicit permission is illegal.
+Always respect privacy and digital rights.
+
+✍️ Author
+Built with 💻 + ☕ by Abdulla Al Mahin
+For portfolio and learning purposes.
+
+📂 Repo Structure
+
+cyber-scan-guardian-shield/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── utils/
+├── backend/ (optional)
+├── README.md
+└── package.json
+
+
+🙌 Want to Contribute?
+1. Fork the repo
+
+2. Make a feature branch: git checkout -b feature/x
+
+3. Commit: git commit -m "add new feature"
+
+4. Push: git push origin feature/x
+
+5. Open a Pull Request
+
+
+
+🧠 Resources
+OWASP Top 10
+
+SecurityHeaders.com
+
+Mozilla Observatory
+
+
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/4e103939-9388-4a18-aebd-6415466feb56) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-# cyber-scan-guardian-shield
